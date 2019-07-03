@@ -10,16 +10,16 @@ WEIGHTS_DIR     = "callbacks/weights/"
 TB_DIR          = "callbacks/tensorboard/"
 CSV_DIR         = 'callbacks/csvlogger/'
 BATCH_SIZE      = 5
-STEPS_PER_EPOCH = 2500
-EPOCHS_STAGE1   = 70
-EPOCHS_STAGE2   = 50
+STEPS_PER_EPOCH = 25
+EPOCHS_STAGE1   = 20#70
+EPOCHS_STAGE2   = 5#20
 LR_STAGE1       = 0.0002
 LR_STAGE2       = 0.00005
 STEPS_VAL       = 100
 BATCH_SIZE_VAL  = 4
 IMAGE_SIZE      = (512, 512)
-STAGE_1         = True # Initial training if True, Fine-tuning if False 
-LAST_CHECKPOINT =  WEIGHTS_DIR + "initial/weights.80-1.94-1.83.hdf5" # set this to be the path to the checkpoint from the last 
+STAGE_1         = False # Initial training if True, Fine-tuning if False 
+LAST_CHECKPOINT =  WEIGHTS_DIR + "initial/weights.19-3.08-3.22.hdf5" # set this to be the path to the checkpoint from the last 
                                                                      # epoch on Stage 1, only needed if STAGE_1 was set to False 
 
 # DATA GENERATORS:
